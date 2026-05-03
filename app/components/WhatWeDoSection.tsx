@@ -1,69 +1,156 @@
 export default function WhatWeDoSection() {
   return (
-    <section id="krouzky" className="py-20 bg-white">
-      <div className="max-w-7xl mx-auto px-6">
-        {/* Heading */}
-        <div className="text-center mb-14">
-          <p className="text-blue-600 text-xs font-bold tracking-widest uppercase mb-3">CO MOTUS DĚLÁ?</p>
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-            Sport pro každé dítě,<br className="hidden sm:block" /> každý den.
-          </h2>
-        </div>
+    <section id="krouzky">
+      {/* Dark title bar */}
+      <div className="bg-gray-900 py-5 px-6">
+        <h2 className="text-center text-2xl md:text-3xl font-black text-white tracking-wide">
+          CO <span className="text-[#2CB5CA]">MOTUS</span> DĚLÁ?
+        </h2>
+      </div>
 
-        {/* Cards row */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {/* Next activity card */}
-          <div className="border border-gray-200 rounded-2xl p-6">
-            <div className="flex items-center justify-between mb-4">
-              <span className="text-[10px] font-bold tracking-widest text-gray-400 uppercase">Příští trénink</span>
-              <svg className="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-              </svg>
+      {/* Main content area */}
+      <div
+        className="relative min-h-[480px] flex items-center"
+        style={{
+          background: "linear-gradient(135deg, #daf2f7 0%, #edf8fb 60%, #d4eef5 100%)",
+        }}
+      >
+        <div className="max-w-7xl mx-auto px-6 py-12 w-full">
+          <div className="max-w-lg">
+            {/* Badges */}
+            <div className="flex gap-3 mb-5">
+              <span className="bg-[#2CB5CA] text-white text-xs font-bold tracking-wider px-4 py-1.5 rounded-full">
+                POPULÁRNÍ
+              </span>
+              <span className="bg-[#F07228] text-white text-xs font-bold tracking-wider px-4 py-1.5 rounded-full">
+                Věk 6-12
+              </span>
             </div>
-            <h3 className="text-xl font-bold text-gray-900 mb-1">Všestrannost</h3>
-            <p className="text-gray-500 text-sm mb-4">Út a Čt, 17:00 v Plzni</p>
 
-            {/* Capacity bar */}
-            <div>
-              <div className="h-2 bg-gray-100 rounded-full overflow-hidden mb-2">
-                <div className="h-full bg-blue-600 rounded-full" style={{ width: "25%" }} />
-              </div>
-              <p className="text-gray-500 text-xs">Obsazenost kroužku: 5/20 dětí</p>
-            </div>
-          </div>
+            <h3 className="text-4xl md:text-5xl font-black text-[#2CB5CA] leading-tight mb-4">
+              SPORTOVNÍ<br />KROUŽKY
+            </h3>
 
-          {/* Season progress card */}
-          <div className="bg-blue-600 rounded-2xl p-6 text-white">
-            <div className="flex items-center justify-between mb-4">
-              <span className="text-[10px] font-bold tracking-widest text-blue-200 uppercase">Průběh sezóny</span>
-              <svg className="w-5 h-5 text-blue-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-              </svg>
-            </div>
-            <ul className="space-y-2 text-sm">
-              {["Pohybové hry", "Atletika", "Gymnastika", "Netradiční sportovní hry", "Míčové hry", "Parkour"].map((sport) => (
-                <li key={sport} className="flex items-center gap-2">
-                  <span className="w-1.5 h-1.5 rounded-full bg-blue-300 flex-shrink-0" />
-                  {sport}
-                </li>
+            <p className="text-gray-700 text-base mb-7">
+              Rozvíjejte pohybové dovednosti svých dětí v moderním zázemí pod vedením profesionálních trenérů.
+            </p>
+
+            {/* Info row */}
+            <div className="flex flex-wrap gap-6 mb-7">
+              {[
+                {
+                  label: "KDY",
+                  value: "Út a Čt",
+                  icon: (
+                    <svg className="w-4 h-4 text-[#2CB5CA]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                    </svg>
+                  ),
+                },
+                {
+                  label: "ČAS",
+                  value: "17:00 – 18:00",
+                  icon: (
+                    <svg className="w-4 h-4 text-[#2CB5CA]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                  ),
+                },
+                {
+                  label: "MÍSTO",
+                  value: "Plzeň",
+                  icon: (
+                    <svg className="w-4 h-4 text-[#2CB5CA]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                  ),
+                },
+              ].map((item) => (
+                <div key={item.label} className="flex items-center gap-2">
+                  <div className="w-8 h-8 bg-white/60 rounded-lg flex items-center justify-center">
+                    {item.icon}
+                  </div>
+                  <div>
+                    <div className="text-[10px] font-bold text-gray-500 tracking-wider">{item.label}</div>
+                    <div className="text-sm font-semibold text-gray-900">{item.value}</div>
+                  </div>
+                </div>
               ))}
-            </ul>
-          </div>
-
-          {/* Instructor card */}
-          <div className="border border-gray-200 rounded-2xl p-6 flex gap-4 items-start">
-            <div className="w-28 h-36 rounded-xl overflow-hidden bg-gray-200 flex-shrink-0">
-              <img src="/images/trener-sebo.jpg" alt="Jan Šebo" className="w-full h-full object-cover" />
             </div>
-            <div className="pt-2">
-              <p className="text-[10px] font-bold tracking-widest text-gray-400 uppercase mb-2">Hlavní trenér</p>
-              <h3 className="text-lg font-bold text-gray-900 mb-3">Bc. Jan Šebo</h3>
-              <div className="flex gap-1">
-                {[1, 2, 3, 4, 5].map((s) => (
-                  <svg key={s} className="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                  </svg>
+
+            {/* Price + CTA */}
+            <div className="flex items-center gap-8 flex-wrap">
+              <div>
+                <div className="text-xs text-gray-500 font-medium mb-1">Měsíční členství</div>
+                <div className="text-2xl font-bold text-gray-900">
+                  700 Kč <span className="text-sm font-normal text-gray-500">/ měsíc</span>
+                </div>
+              </div>
+              <a
+                href="mailto:Motuscz@gmail.com?subject=Přihláška na kroužek"
+                className="bg-[#2CB5CA] hover:bg-[#25a3b7] text-white font-bold px-8 py-3.5 rounded-full text-sm transition-colors shadow-md"
+              >
+                Přihlásit se →
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Bottom 3 cards */}
+      <div className="bg-white">
+        <div className="max-w-7xl mx-auto px-6 py-10">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            {/* Next training */}
+            <div className="bg-white rounded-2xl p-5 shadow-sm border border-gray-100">
+              <div className="flex items-center justify-between mb-3">
+                <span className="text-[10px] font-bold tracking-widest text-gray-400 uppercase">Příští trénink</span>
+                <svg className="w-5 h-5 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                </svg>
+              </div>
+              <h4 className="text-lg font-bold text-gray-900 mb-1">Všestrannost</h4>
+              <p className="text-gray-500 text-sm mb-4">Út a Čt, 17:00 v Plzni</p>
+              <div className="h-1.5 bg-gray-100 rounded-full overflow-hidden mb-2">
+                <div className="h-full bg-[#F07228] rounded-full" style={{ width: "25%" }} />
+              </div>
+              <p className="text-gray-400 text-xs">Obsazenost kroužku: 5/20 dětí</p>
+            </div>
+
+            {/* Season progress */}
+            <div className="bg-[#2CB5CA] rounded-2xl p-5 text-white">
+              <div className="flex items-center justify-between mb-3">
+                <span className="text-[10px] font-bold tracking-widest text-white/70 uppercase">Průběh sezóny</span>
+                <svg className="w-5 h-5 text-white/50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+                </svg>
+              </div>
+              <ul className="space-y-1.5 text-sm">
+                {["Pohybové hry", "Atletika", "Gymnastika", "Netradiční sportovní hry", "Míčové hry", "Parkour"].map((sport) => (
+                  <li key={sport} className="flex items-center gap-2">
+                    <span className="w-1.5 h-1.5 rounded-full bg-white/60 flex-shrink-0" />
+                    {sport}
+                  </li>
                 ))}
+              </ul>
+            </div>
+
+            {/* Instructor */}
+            <div className="bg-white rounded-2xl p-5 shadow-sm border border-gray-100 flex gap-4 items-start">
+              <div className="w-24 h-28 rounded-xl overflow-hidden bg-gray-100 flex-shrink-0">
+                <img src="/images/trener-sebo.jpg" alt="Jan Šebo" className="w-full h-full object-cover object-top" />
+              </div>
+              <div className="pt-1">
+                <p className="text-[10px] font-bold tracking-widest text-gray-400 uppercase mb-2">Hlavní trenér</p>
+                <h4 className="text-base font-bold text-gray-900 mb-3">Bc. Jan Šebo</h4>
+                <div className="flex gap-0.5">
+                  {[1, 2, 3, 4, 5].map((s) => (
+                    <svg key={s} className="w-3.5 h-3.5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg>
+                  ))}
+                </div>
               </div>
             </div>
           </div>

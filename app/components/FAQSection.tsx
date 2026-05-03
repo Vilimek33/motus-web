@@ -15,12 +15,12 @@ const faqs = [
     a: "Ano! Kemp je navržen tak, aby byl vhodný pro děti bez předchozích sportovních zkušeností. Naši trenéři přizpůsobí program každému dítěti.",
   },
   {
-    q: "Co si má dítě vzít s sebou?",
-    a: "Pohodlné sportovní oblečení, pevnou obuv vhodnou na sport, pláštěnku nebo bunda do nepohody. Ostatní vybavení zajišťujeme my.",
+    q: "Jak vypadá jídelníček?",
+    a: "Zajišťujeme 3 vyvážená jídla denně plus pitný režim po celý den. Jídelníček sestavujeme s důrazem na výživu sportujících dětí. Na alergie a diety reagujeme individuálně.",
   },
   {
-    q: "Jak probíhá přihlášení?",
-    a: "Přihlášení probíhá přes kontaktní e-mail nebo telefon. Po potvrzení přihlášky vám zašleme platební instrukce a detaily kempu.",
+    q: "Musíme mít vlastní vybavení?",
+    a: "Ne, veškeré sportovní vybavení zajišťujeme my. Stačí přinést pohodlné sportovní oblečení a pevnou obuv vhodnou na sport.",
   },
 ];
 
@@ -28,31 +28,30 @@ export default function FAQSection() {
   const [open, setOpen] = useState<number | null>(null);
 
   return (
-    <section id="faq" className="py-20 bg-white">
+    <section id="faq" className="py-20 bg-[#F5F0EB]">
       <div className="max-w-3xl mx-auto px-6">
-        {/* Heading */}
         <div className="text-center mb-14">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900">Často se ptáte.</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900">
+            Často se{" "}
+            <span className="text-[#2CB5CA]">ptáte.</span>
+          </h2>
         </div>
 
-        {/* Accordion */}
         <div className="space-y-3">
           {faqs.map((faq, i) => (
             <div
               key={i}
-              className={`border rounded-2xl overflow-hidden transition-colors ${
-                open === i ? "border-blue-200 bg-blue-50" : "border-gray-200 bg-white"
-              }`}
+              className="bg-white border border-gray-200 rounded-2xl overflow-hidden"
             >
               <button
                 className="w-full flex items-center justify-between px-6 py-5 text-left"
                 onClick={() => setOpen(open === i ? null : i)}
               >
-                <span className={`font-semibold text-sm md:text-base ${open === i ? "text-blue-700" : "text-gray-900"}`}>
+                <span className="font-semibold text-sm md:text-base text-gray-900">
                   {faq.q}
                 </span>
                 <svg
-                  className={`w-5 h-5 flex-shrink-0 ml-4 transition-transform ${open === i ? "rotate-180 text-blue-600" : "text-gray-400"}`}
+                  className={`w-5 h-5 flex-shrink-0 ml-4 transition-transform text-gray-400 ${open === i ? "rotate-180" : ""}`}
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"

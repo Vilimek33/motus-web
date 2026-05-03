@@ -2,38 +2,48 @@ export default function CampsSection() {
   return (
     <section
       id="kempy"
-      className="relative py-24 bg-gray-900 overflow-hidden"
+      className="relative py-20 overflow-hidden"
       style={{
         backgroundImage: "url('/images/stadium-bg.jpg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
     >
-      {/* Dark overlay */}
-      <div className="absolute inset-0 bg-gray-950/80" />
+      {/* Teal gradient overlay */}
+      <div
+        className="absolute inset-0"
+        style={{
+          background: "linear-gradient(to right, #2CB5CA 0%, #2CB5CA 40%, rgba(44,181,202,0.7) 60%, rgba(44,181,202,0.2) 100%)",
+        }}
+      />
 
       <div className="relative z-10 max-w-7xl mx-auto px-6">
-        <div className="max-w-2xl">
-          {/* Badge */}
-          <div className="inline-block bg-blue-600/20 border border-blue-500/40 text-blue-400 text-xs font-bold tracking-widest px-4 py-1.5 rounded-full mb-6 uppercase">
+        {/* Frosted glass card */}
+        <div className="max-w-xl bg-white/85 backdrop-blur-sm rounded-3xl p-8 md:p-10 shadow-xl">
+          <div className="inline-block bg-[#2CB5CA] text-white text-xs font-bold tracking-widest px-4 py-1.5 rounded-full mb-6 uppercase">
             Sportovní všestranné kempy
           </div>
 
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-            Přihlaste své děti na naše{" "}
-            <span className="text-blue-500">celoroční kempy</span>
+          <h2 className="text-3xl md:text-4xl font-black text-gray-900 leading-tight mb-5">
+            <span className="text-[#2CB5CA]">SPORTOVNÍ</span><br />
+            VŠESTRANNÉ KEMPY
           </h2>
 
-          <p className="text-gray-300 text-lg mb-10 max-w-xl">
-            Kempy jsou zaměřené především na všestrannost. Dítě si vyzkouší sporty,
-            kterým by se mohlo v následujících letech věnovat. Většina kempů od 7:30 do 16:30 po–pá.
+          <p className="text-gray-700 text-base mb-3">
+            Přihlaste své děti na naše celoroční kempy, které jsou zaměřené především na všestrannost.
+          </p>
+          <p className="text-gray-700 text-base mb-3">
+            Dítě si vyzkouší sporty, kterým by se mohlo v následujících letech věnovat.
+          </p>
+          <p className="text-gray-700 text-base mb-8">
+            Většina kempů od 7:30 do 16:30 po–pá.
           </p>
 
           <a
-            href="#registrace"
-            className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold px-10 py-5 rounded-xl text-sm tracking-wider transition-colors shadow-lg shadow-blue-900/30"
+            href="mailto:Motuscz@gmail.com?subject=Přihláška na kemp"
+            className="inline-block bg-[#F07228] hover:bg-[#d96522] text-white font-bold px-8 py-4 rounded-full text-xs tracking-widest transition-colors shadow-md uppercase"
           >
-            PŘIHLÁSIT SE NA AKTUÁLNÍ KEMP
+            Přihlásit se na aktuální kemp
           </a>
         </div>
       </div>
