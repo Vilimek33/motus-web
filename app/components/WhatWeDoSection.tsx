@@ -12,9 +12,12 @@ export default function WhatWeDoSection() {
       <div
         className="relative min-h-[480px] flex items-center"
         style={{
-          background: "linear-gradient(135deg, #daf2f7 0%, #edf8fb 60%, #d4eef5 100%)",
+          backgroundImage: "url('/images/krouzky.png')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
         }}
       >
+        <div className="absolute inset-0 bg-white/40" />
         <div className="max-w-7xl mx-auto px-6 py-12 w-full">
           <div className="max-w-lg">
             {/* Badges */}

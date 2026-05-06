@@ -18,14 +18,8 @@ export default function Navbar() {
       <nav className="bg-white sticky top-0 z-50 border-b border-gray-100 shadow-sm">
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-1">
-            <span className="font-black text-2xl tracking-widest text-gray-900 leading-none">
-              M<span className="text-[#2CB5CA]">0</span>TUS
-            </span>
-            <svg className="text-[#2CB5CA] mb-1" width="16" height="20" viewBox="0 0 16 22" fill="currentColor">
-              <ellipse cx="8" cy="2.5" rx="2.2" ry="2.2"/>
-              <path d="M5 6.5C5.5 5.5 6.5 5 8 5s2.5.5 3 1.5l1.8 4.5-2.3.6L9 8.5v9H7.5v-5H6.8v5H5V8.5L3.5 11.6l-2.3-.6L5 6.5z"/>
-            </svg>
+          <a href="#">
+            <img src="/images/logo.png" alt="Motus Plzeň" className="h-10 w-auto" />
           </a>
 
           {/* Desktop nav */}
