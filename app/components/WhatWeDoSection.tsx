@@ -12,7 +12,7 @@ export default function WhatWeDoSection() {
       <div
         className="relative min-h-[480px] flex items-center"
         style={{
-          backgroundImage: "url('/images/krouzky.png')",
+          backgroundImage: "url('/images/koruzky.png')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
