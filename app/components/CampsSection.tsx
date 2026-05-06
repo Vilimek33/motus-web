@@ -40,7 +40,7 @@ export default function CampsSection() {
           </p>
 
           <a
-            href="mailto:Motuscz@gmail.com?subject=Přihláška na kemp"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdNjsnNkgQ9Lg8ZfIzyt3hUVhOgvjMz_mUXspty193yG5DyPg/viewform"
             className="inline-block bg-[#F07228] hover:bg-[#d96522] text-white font-bold px-8 py-4 rounded-full text-xs tracking-widest transition-colors shadow-md uppercase"
           >
             Přihlásit se na aktuální kemp

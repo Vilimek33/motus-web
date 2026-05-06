@@ -91,7 +91,7 @@ export default function WhatWeDoSection() {
                 </div>
               </div>
               <a
-                href="mailto:Motuscz@gmail.com?subject=Přihláška na kroužek"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSdg1MVEeL4OKOXBp-8pySsVVRH0YkbU2JYnYYkBVZFtNgr-4A/viewform?usp=send_form"
                 className="bg-[#2CB5CA] hover:bg-[#25a3b7] text-white font-bold px-8 py-3.5 rounded-full text-sm transition-colors shadow-md"
               >
                 Přihlásit se →
