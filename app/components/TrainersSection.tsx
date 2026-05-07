@@ -47,7 +47,7 @@ export default function TrainersSection() {
                 <img
                   src={trainer.image}
                   alt={trainer.name}
-                  className="w-full h-full object-cover object-top"
+                  className="w-full h-full object-cover object-center"
                 />
                 {/* Sport tags */}
                 <div className="absolute bottom-3 left-3 flex flex-wrap gap-2">
