@@ -1,25 +1,25 @@
 export default function WhatWeDoSection() {
   return (
     <section id="krouzky">
-      {/* Dark title bar */}
-      <div className="bg-gray-900 py-5 px-6">
-        <h2 className="text-center text-2xl md:text-3xl font-black text-white tracking-wide">
+      {/* Light title bar */}
+      <div className="bg-white py-6 px-6 border-b border-gray-100">
+        <h2 className="text-center text-2xl md:text-3xl font-black text-gray-900 tracking-wide">
           CO <span className="text-[#2CB5CA]">MOTUS</span> DĚLÁ?
         </h2>
       </div>
 
-      {/* Main content area */}
+      {/* Main content area — image fills full width, card on left */}
       <div
-        className="relative min-h-[480px] flex items-center"
+        className="relative min-h-[520px] flex items-center"
         style={{
           backgroundImage: "url('/images/koruzky.png')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
       >
-        <div className="absolute inset-0 bg-white/40 z-0" />
         <div className="relative z-10 max-w-7xl mx-auto px-6 py-12 w-full">
-          <div className="max-w-lg">
+          {/* Card — covers only left portion, image visible on right */}
+          <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 max-w-xl shadow-lg">
             {/* Badges */}
             <div className="flex gap-3 mb-5">
               <span className="bg-[#2CB5CA] text-white text-xs font-bold tracking-wider px-4 py-1.5 rounded-full">
@@ -71,11 +71,11 @@ export default function WhatWeDoSection() {
                 },
               ].map((item) => (
                 <div key={item.label} className="flex items-center gap-2">
-                  <div className="w-8 h-8 bg-white/60 rounded-lg flex items-center justify-center">
+                  <div className="w-8 h-8 bg-[#2CB5CA]/10 rounded-lg flex items-center justify-center">
                     {item.icon}
                   </div>
                   <div>
-                    <div className="text-[10px] font-bold text-gray-500 tracking-wider">{item.label}</div>
+                    <div className="text-[10px] font-bold text-gray-400 tracking-wider">{item.label}</div>
                     <div className="text-sm font-semibold text-gray-900">{item.value}</div>
                   </div>
                 </div>
@@ -92,7 +92,7 @@ export default function WhatWeDoSection() {
               </div>
               <a
                 href="https://docs.google.com/forms/d/e/1FAIpQLSdg1MVEeL4OKOXBp-8pySsVVRH0YkbU2JYnYYkBVZFtNgr-4A/viewform?usp=send_form"
-                className="bg-[#2CB5CA] hover:bg-[#25a3b7] text-white font-bold px-8 py-3.5 rounded-full text-sm transition-colors shadow-md"
+                className="bg-[#2CB5CA] hover:bg-[#25a3b7] text-white font-bold px-10 py-4 rounded-full text-base transition-colors shadow-md"
               >
                 Přihlásit se →
               </a>
@@ -142,7 +142,7 @@ export default function WhatWeDoSection() {
             {/* Instructor */}
             <div className="bg-white rounded-2xl p-5 shadow-sm border border-gray-100 flex gap-4 items-start">
               <div className="w-24 h-28 rounded-xl overflow-hidden bg-gray-100 flex-shrink-0">
-                <img src="/images/trener-sebo.jpg" alt="Jan Šebo" className="w-full h-full object-cover object-top" />
+                <img src="/images/trener-sebo.jpg" alt="Jan Šebo" className="w-full h-full object-cover object-center" />
               </div>
               <div className="pt-1">
                 <p className="text-[10px] font-bold tracking-widest text-gray-400 uppercase mb-2">Hlavní trenér</p>
