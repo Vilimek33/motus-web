@@ -4,15 +4,15 @@ import { useState } from "react";
 const faqs = [
   {
     q: "Co když dítě onemocní před kempem?",
-    a: "V případě nemoci dítěte vám vrátíme plnou částku nebo nabídneme náhradní termín. Kontaktujte nás co nejdříve na Motuscz@gmail.com.",
+    a: "Víme, že zdraví si nevybírá. Pokud se vaše dítě nemůže zúčastnit, nejjednodušším řešením je najít za něj náhradníka (např. kamaráda nebo sourozence). V takovém případě neplatíte žádné storno poplatky – stačí nám tuto změnu pouze včas oznámit.",
   },
   {
     q: "Jaká je věková skupina dětí?",
-    a: "Náš kemp je určen pro děti ve věku 6–10 let. Pro starší děti plánujeme v budoucnu specializované programy.",
+    a: "U dětí dbáme na správný rozvoj odpovídající jejich věku. Proto skupiny na kempech zásadně nemícháme a dělíme je do dvou kategorií: Mladší sportovci (6–10 let) Starší žáci (10–15 let) Díky tomu můžeme program přizpůsobit tak, aby byl pro každou skupinu dostatečně zábavný i motivující. Konkrétní rozmezí vždy najdete v detailu daného kempu.",
   },
   {
     q: "Berete i úplné začátečníky?",
-    a: "Ano! Kemp je navržen tak, aby byl vhodný pro děti bez předchozích sportovních zkušeností. Naši trenéři přizpůsobí program každému dítěti.",
+    a: "Určitě ano! Naším cílem je ukázat dětem radost z pohybu v jeho celé šíři. Začátečníci si u nás vyzkouší desítky různých disciplín a her. Často se stává, že právě u nás děti objeví sport, který je nadchne natolik, že se mu pak věnují i nadále.",
   },
   {
     q: "Jak vypadá jídelníček?",
@@ -20,7 +20,7 @@ const faqs = [
   },
   {
     q: "Musíme mít vlastní vybavení?",
-    a: "Ne, veškeré sportovní vybavení zajišťujeme my. Stačí přinést pohodlné sportovní oblečení a pevnou obuv vhodnou na sport.",
+    a: "Vůbec ne. Chceme, aby byl sport dostupný pro všechny. Jediné, co bude vaše dítě potřebovat, je: Vhodné sportovní oblečení (na ven i do haly podle počasí), Kvalitní běžecká obuv (klasické tenisky). Veškeré ostatní sportovní náčiní a pomůcky zajistíme my!",
   },
 ];
 
