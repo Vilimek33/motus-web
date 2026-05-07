@@ -17,8 +17,8 @@ export default function WhatWeDoSection() {
           backgroundPosition: "center",
         }}
       >
-        <div className="absolute inset-0 bg-white/40" />
-        <div className="max-w-7xl mx-auto px-6 py-12 w-full">
+        <div className="absolute inset-0 bg-white/40 z-0" />
+        <div className="relative z-10 max-w-7xl mx-auto px-6 py-12 w-full">
           <div className="max-w-lg">
             {/* Badges */}
             <div className="flex gap-3 mb-5">
