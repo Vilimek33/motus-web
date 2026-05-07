@@ -9,8 +9,6 @@ export default function HeroSection() {
         backgroundPosition: "center",
       }}
     >
-      <div className="absolute inset-0 bg-white/10" />
-
       <div className="relative z-10 max-w-7xl mx-auto px-6 py-20 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left – card */}
