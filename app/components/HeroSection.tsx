@@ -46,7 +46,9 @@ export default function HeroSection() {
             {/* Buttons */}
             <div className="flex flex-wrap gap-3 items-center mb-5">
               <a
-                href="#registrace"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSdNjsnNkgQ9Lg8ZfIzyt3hUVhOgvjMz_mUXspty193yG5DyPg/viewform"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="bg-[#2CB5CA] hover:bg-[#25a3b7] text-white font-bold px-7 py-3.5 rounded-full text-xs tracking-widest transition-colors shadow-md"
               >
                 REGISTROVAT NYNÍ
