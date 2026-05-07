@@ -30,7 +30,9 @@ export default function RegistrationSection() {
                 Cena zahrnuje kompletní stravu, prostory, vybavení a kvalifikované trenéry.
               </p>
               <a
-                href="mailto:Motuscz@gmail.com?subject=Přihláška na kemp"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSdNjsnNkgQ9Lg8ZfIzyt3hUVhOgvjMz_mUXspty193yG5DyPg/viewform"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="block w-full bg-[#F07228] hover:bg-[#d96522] text-white font-bold text-center py-4 rounded-xl text-xs tracking-widest transition-colors shadow-md uppercase"
               >
                 Přihlásit se na aktuální kemp v srpnu
