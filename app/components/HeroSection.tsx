@@ -66,7 +66,7 @@ export default function HeroSection() {
 
           {/* Right – trainer photo */}
           <div className="hidden lg:flex justify-center items-center">
-            <div className="w-[460px] h-[520px] rounded-3xl overflow-hidden shadow-2xl">
+            <div className="w-[460px] h-[520px] rounded-3xl overflow-hidden">
               <img
                 src="/images/hero-photo.jpg"
                 alt="Trenéři Motus"
