@@ -14,7 +14,7 @@ export default function HeroSection() {
           {/* Left – card */}
           <div className="bg-white/80 backdrop-blur-md rounded-3xl p-8 md:p-10 shadow-2xl">
             <div className="inline-block bg-[#2CB5CA] text-white text-xs font-bold tracking-widest px-4 py-1.5 rounded-full mb-6">
-              VŠESTRANNÝ SPORTOVNÍ KEMP PRO DĚTI
+              MOTUS PLZEŇ – SPORTOVNÍ KEMP PRO DĚTI
             </div>
 
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-5">
