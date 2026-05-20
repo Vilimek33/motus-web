@@ -45,7 +45,7 @@ const jsonLd = {
   },
   taxID: "24116653",
   sameAs: [
-    "https://www.instagram.com/motus_move_more/",
+    "https://www.instagram.com/motus_plzen?igsh=MXBsMHNjb203NGxkdQ==",
     "https://www.facebook.com/people/Motus-Plze%C5%88/61588373848839/",
   ],
 };

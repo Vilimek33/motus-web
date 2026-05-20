@@ -14,7 +14,7 @@ export default function Footer() {
             </p>
             <div className="flex gap-3">
               <a
-                href="https://www.instagram.com/motus_move_more/"
+                href="https://www.instagram.com/motus_plzen?igsh=MXBsMHNjb203NGxkdQ=="
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-9 h-9 bg-white/20 rounded-full flex items-center justify-center text-white hover:bg-white/30 transition-colors"

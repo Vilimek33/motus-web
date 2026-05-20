@@ -44,7 +44,7 @@ export default function Navbar() {
           {/* Social icons + mobile toggle */}
           <div className="flex items-center gap-4">
             <div className="hidden md:flex items-center gap-4">
-              <a href="https://www.instagram.com/motus_move_more/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-900 transition-colors">
+              <a href="https://www.instagram.com/motus_plzen?igsh=MXBsMHNjb203NGxkdQ==" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-900 transition-colors">
                 <svg width="22" height="22" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24">
                   <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
                   <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/>
