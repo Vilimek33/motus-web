@@ -14,26 +14,26 @@ export default function HeroSection() {
           {/* Left – card */}
           <div className="bg-white/80 backdrop-blur-md rounded-3xl p-8 md:p-10 shadow-2xl">
             <div className="inline-block bg-[#2CB5CA] text-white text-xs font-bold tracking-widest px-4 py-1.5 rounded-full mb-6">
-              MOTUS PLZEŇ – SPORTOVNÍ KEMP PRO DĚTI
+              MOTUS PLZEŇ – SPORTOVNÍ KROUŽKY PRO DĚTI
             </div>
 
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-5">
-              Léto plné pohybu,<br />
+              Všestranný pohyb,<br />
               který si děti{" "}
               <span className="text-[#2CB5CA]">zamilují!</span>
             </h1>
 
             <p className="text-gray-600 text-base mb-8 max-w-md">
-              Dopřejte svým dětem týden plný nových přátelství, sportu a nezapomenutelných zážitků.
+              Rozvíjíme u dětí všestrannost, sebevědomí a zdravou lásku k pohybu, která je může provázet celý život.
             </p>
 
             {/* Info badges */}
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 mb-8">
               {[
-                { icon: "📍", label: "MÍSTA", value: "Plzeň" },
-                { icon: "🎂", label: "VĚK", value: "6–10" },
-                { icon: "🕗", label: "ČAS", value: "8:00–16:30" },
-                { icon: "🍽️", label: "STRAVA", value: "3× denně + pití" },
+                { icon: "📍", label: "MÍSTO", value: "Hala ZŠ Chotěšov" },
+                { icon: "🎒", label: "PRO KOHO", value: "2.–6. třída" },
+                { icon: "🗓️", label: "FREKVENCE", value: "1× týdně" },
+                { icon: "⚽", label: "NÁPLŇ", value: "Gymnastika, atletika, míčové hry" },
               ].map((item) => (
                 <div key={item.label} className="bg-[#2CB5CA]/10 border border-[#2CB5CA]/20 rounded-xl p-3">
                   <div className="text-base mb-0.5">{item.icon}</div>
@@ -43,26 +43,44 @@ export default function HeroSection() {
               ))}
             </div>
 
-            {/* Buttons */}
-            <div className="flex flex-wrap gap-3 items-center mb-5">
+            {/* Program */}
+            <ul className="space-y-2 mb-8">
+              {[
+                "Zábavnou a hravou formou",
+                "Přátelský přístup mladých trenérů",
+                "Pohybové hry, základy gymnastiky a atletiky",
+                "Netradiční a míčové hry",
+                "Rozvoj obratnosti, koordinace a rychlosti",
+                "Pro holky i kluky, bez ohledu na sportovní úroveň",
+              ].map((item) => (
+                <li key={item} className="flex items-start gap-2.5 text-gray-700 text-sm">
+                  <span className="mt-1.5 w-2 h-2 rounded-full bg-[#2CB5CA] flex-shrink-0" />
+                  {item}
+                </li>
+              ))}
+            </ul>
+
+            {/* Contact */}
+            <div className="flex flex-wrap items-center justify-between gap-3.5 bg-white border-[1.5px] border-[#2CB5CA]/35 rounded-2xl px-4 py-4 mb-4">
+              <p className="text-gray-800 text-sm font-semibold max-w-[320px]">
+                V případě zájmu nám pište nebo volejte na{" "}
+                <a href="tel:+420702026586" className="text-[#25a3b7] font-extrabold">
+                  +420 702 026 586
+                </a>
+              </p>
               <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLSdNjsnNkgQ9Lg8ZfIzyt3hUVhOgvjMz_mUXspty193yG5DyPg/viewform"
+                href="https://wa.me/420702026586"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-[#2CB5CA] hover:bg-[#25a3b7] text-white font-bold px-7 py-3.5 rounded-full text-xs tracking-widest transition-colors shadow-md"
+                className="inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold text-xs px-4 py-2.5 rounded-full transition-colors shadow-md whitespace-nowrap"
               >
-                REGISTROVAT NYNÍ
-              </a>
-              <a
-                href="#kempy"
-                className="border-2 border-gray-400 hover:border-gray-600 text-gray-700 font-bold px-7 py-3.5 rounded-full text-xs tracking-widest transition-colors"
-              >
-                VÍCE O PROGRAMU
+                WhatsApp
               </a>
             </div>
 
             <p className="text-gray-500 text-xs">
-              Cena je <span className="text-gray-800 font-semibold">4 444 Kč</span> včetně stravování a sportovišť.
+              Cena je <span className="text-gray-800 font-semibold">1 200 Kč</span> za pololetí (15 lekcí) nebo{" "}
+              <span className="text-gray-800 font-semibold">2 200 Kč</span> za rok (30 lekcí).
             </p>
           </div>
 
