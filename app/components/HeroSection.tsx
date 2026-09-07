@@ -79,8 +79,8 @@ export default function HeroSection() {
             </div>
 
             <p className="text-gray-500 text-xs">
-              Cena je <span className="text-gray-800 font-semibold">1 200 Kč</span> za pololetí (15 lekcí) nebo{" "}
-              <span className="text-gray-800 font-semibold">2 200 Kč</span> za rok (30 lekcí).
+              Cena je <span className="text-gray-800 font-semibold">1 500 Kč</span> za pololetí (15 lekcí) nebo{" "}
+              <span className="text-gray-800 font-semibold">2 800 Kč</span> za rok (30 lekcí).
             </p>
           </div>
 
