@@ -1,0 +1,175 @@
+{
+  "contact": {
+    "whatsappPhone": "+420 702 026 586"
+  },
+  "navbar": {
+    "announcement": "LETNÍ KEMP V SRPNU SE RYCHLE PLNÍ, PŘIHLAS SE I TY!",
+    "logo": "/images/logo.png",
+    "links": [
+      { "label": "KEMPY" },
+      { "label": "KROUŽKY" },
+      { "label": "O NÁS" },
+      { "label": "ČASTÉ OTÁZKY" },
+      { "label": "KONTAKT" }
+    ]
+  },
+  "hero": {
+    "background": "/images/hero-bg.jpg",
+    "badge": "MOTUS PLZEŇ – SPORTOVNÍ KROUŽKY PRO DĚTI",
+    "titleLine1": "Všestranný pohyb,",
+    "titleLine2": "který si děti",
+    "titleHighlight": "zamilují!",
+    "subtitle": "Rozvíjíme u dětí všestrannost, sebevědomí a zdravou lásku k pohybu, která je může provázet celý život.",
+    "infoBadges": [
+      { "icon": "📍", "label": "MÍSTO", "value": "Hala ZŠ Chotěšov" },
+      { "icon": "🎒", "label": "PRO KOHO", "value": "2.–6. třída" },
+      { "icon": "🗓️", "label": "FREKVENCE", "value": "1× týdně" },
+      { "icon": "⚽", "label": "NÁPLŇ", "value": "Gymnastika, atletika, míčové hry" }
+    ],
+    "bullets": [
+      "Zábavnou a hravou formou",
+      "Přátelský přístup mladých trenérů",
+      "Pohybové hry, základy gymnastiky a atletiky",
+      "Netradiční a míčové hry",
+      "Rozvoj obratnosti, koordinace a rychlosti",
+      "Pro holky i kluky, bez ohledu na sportovní úroveň"
+    ],
+    "contactText": "V případě zájmu nám pište nebo volejte na",
+    "whatsappButton": "WhatsApp",
+    "pricePrefix": "Cena je",
+    "price1": "1 500 Kč",
+    "price1Suffix": "za pololetí (15 lekcí) nebo",
+    "price2": "2 800 Kč",
+    "price2Suffix": "za rok (30 lekcí).",
+    "photo": "/images/hero-photo.jpg"
+  },
+  "whatsappContact": {
+    "text": "Nebo nám pište a volejte na",
+    "button": "WhatsApp"
+  },
+  "clubs": {
+    "headingPrefix": "CO",
+    "headingHighlight": "MOTUS",
+    "headingSuffix": "DĚLÁ?",
+    "background": "/images/koruzky.png",
+    "badge1": "POPULÁRNÍ",
+    "badge2": "Věk 6-12",
+    "titleLine1": "SPORTOVNÍ",
+    "titleLine2": "KROUŽKY",
+    "description": "Rozvíjejte pohybové dovednosti svých dětí v moderním zázemí pod vedením profesionálních trenérů.",
+    "info": [
+      { "label": "KDY", "value": "Út a Čt" },
+      { "label": "ČAS", "value": "17:00 – 18:00" },
+      { "label": "MÍSTO", "value": "Plzeň" }
+    ],
+    "priceLabel": "Měsíční členství",
+    "price": "700 Kč",
+    "priceUnit": "/ měsíc",
+    "signupButton": "Přihlásit se →",
+    "nextTraining": {
+      "label": "Příští trénink",
+      "title": "Všestrannost",
+      "when": "Út a Čt, 17:00 v Plzni",
+      "occupancy": "Obsazenost kroužku: 5/20 dětí"
+    },
+    "season": {
+      "label": "Průběh sezóny",
+      "sports": ["Pohybové hry", "Atletika", "Gymnastika", "Netradiční sportovní hry", "Míčové hry", "Parkour"]
+    },
+    "instructor": {
+      "photo": "/images/trener-sebo.jpg",
+      "label": "Hlavní trenér",
+      "name": "Bc. Jan Šebo"
+    }
+  },
+  "camps": {
+    "background": "/images/stadium-bg.jpg",
+    "badge": "Sportovní všestranné kempy",
+    "titleHighlight": "SPORTOVNÍ",
+    "titleLine2": "VŠESTRANNÉ KEMPY",
+    "paragraphs": [
+      "Přihlaste své děti na naše celoroční kempy, které jsou zaměřené především na všestrannost.",
+      "Dítě si vyzkouší sporty, kterým by se mohlo v následujících letech věnovat.",
+      "Většina kempů od 7:30 do 16:30 po–pá."
+    ],
+    "signupButton": "Přihlásit se na aktuální kemp"
+  },
+  "advantages": {
+    "eyebrow": "VÝHODY MOTUS PLZEŇ",
+    "heading": "Proč si vybrat náš kemp?",
+    "pillars": [
+      { "title": "Všestrannost", "desc": "Trénink zahrnující sporty od atletiky, až po netradiční sportovní hry." },
+      { "title": "Stravování a pitný režim", "desc": "Kvalitní vyvážená jídla a zajištěná hydratace po celý den pro maximální energii." },
+      { "title": "Výlety do přírody", "desc": "Pravidelné vycházky do přírody pro aktivní regeneraci a objevování okolí." },
+      { "title": "Sportovní psychologie", "desc": "Budování mentální odolnosti a týmového ducha skrze základy psychologie sportu." }
+    ]
+  },
+  "trainers": {
+    "headingPrefix": "Trenéři, co mají",
+    "headingHighlightLine1": "tah na",
+    "headingHighlightLine2": "bránu.",
+    "intro": "Kombinujeme pedagogické zkušenosti s profesionální sportovní minulostí.",
+    "people": [
+      { "name": "Bc. Jan Šebo", "role": "Specialista na herní dovednosti", "sports": ["BĚH", "MÍČOVÉ HRY"], "image": "/images/trener-sebo.jpg" },
+      { "name": "Bc. Daniel Šobr", "role": "Specialista na herní dovednosti", "sports": ["FOTBAL", "MÍČOVÉ HRY"], "image": "/images/trener-sobr.jpg" },
+      { "name": "Bc. David Termer", "role": "Koordinátor pohybových kroužků", "sports": ["ATLETIKA", "GYMNASTIKA"], "image": "/images/trener-termer.jpg" }
+    ]
+  },
+  "faq": {
+    "headingPrefix": "Často se",
+    "headingHighlight": "ptáte.",
+    "items": [
+      {
+        "q": "Co když dítě onemocní před kempem?",
+        "a": "Víme, že zdraví si nevybírá. Pokud se vaše dítě nemůže zúčastnit, nejjednodušším řešením je najít za něj náhradníka (např. kamaráda nebo sourozence). V takovém případě neplatíte žádné storno poplatky – stačí nám tuto změnu pouze včas oznámit."
+      },
+      {
+        "q": "Jaká je věková skupina dětí?",
+        "a": "U dětí dbáme na správný rozvoj odpovídající jejich věku. Proto skupiny na kempech zásadně nemícháme a dělíme je do dvou kategorií: Mladší sportovci (6–10 let) Starší žáci (10–15 let) Díky tomu můžeme program přizpůsobit tak, aby byl pro každou skupinu dostatečně zábavný i motivující. Konkrétní rozmezí vždy najdete v detailu daného kempu."
+      },
+      {
+        "q": "Berete i úplné začátečníky?",
+        "a": "Určitě ano! Naším cílem je ukázat dětem radost z pohybu v jeho celé šíři. Začátečníci si u nás vyzkouší desítky různých disciplín a her. Často se stává, že právě u nás děti objeví sport, který je nadchne natolik, že se mu pak věnují i nadále."
+      },
+      {
+        "q": "Jak vypadá jídelníček?",
+        "a": "Zajišťujeme 3 vyvážená jídla denně plus pitný režim po celý den. Jídelníček sestavujeme s důrazem na výživu sportujících dětí. Na alergie a diety reagujeme individuálně."
+      },
+      {
+        "q": "Musíme mít vlastní vybavení?",
+        "a": "Vůbec ne. Chceme, aby byl sport dostupný pro všechny. Jediné, co bude vaše dítě potřebovat, je: Vhodné sportovní oblečení (na ven i do haly podle počasí), Kvalitní běžecká obuv (klasické tenisky). Veškeré ostatní sportovní náčiní a pomůcky zajistíme my!"
+      }
+    ]
+  },
+  "registration": {
+    "titleLine1": "Zajistěte svému dítěti",
+    "titleLine2": "místo včas",
+    "text": "Kapacita termínů je omezená. Přihlaste se pro léto plné pohybu a nových přátelství.",
+    "price": "4 444 Kč",
+    "priceUnit": "/ týden",
+    "priceNote": "Cena zahrnuje kompletní stravu, prostory, vybavení a kvalifikované trenéry.",
+    "button": "Přihlásit se na aktuální kemp v srpnu"
+  },
+  "footer": {
+    "brand": "MOTUS PLZEŇ Z.S.",
+    "description": "Budujeme zdravý vztah ke sportu u dětí už od útlého věku. Profesionálně, hravě a srdcem.",
+    "menuHeading": "MENU",
+    "menuLinks": [
+      { "label": "Kempy" },
+      { "label": "Kroužky" },
+      { "label": "O nás" },
+      { "label": "FAQ" }
+    ],
+    "otherHeading": "OSTATNÍ",
+    "otherLinks": [
+      { "label": "Kontakt" },
+      { "label": "Obchodní podmínky" }
+    ],
+    "contactHeading": "KONTAKT",
+    "email": "Motuscz@gmail.com",
+    "phone": "+420 604 420 280",
+    "region": "Plzeňský kraj",
+    "ico": "IČO: 24116653",
+    "copyright": "© 2024 Motus Plzeň z.s. Všechna práva vyhrazena."
+  }
+}

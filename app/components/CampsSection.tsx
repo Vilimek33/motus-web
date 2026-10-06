@@ -1,16 +1,12 @@
+"use client";
 import WhatsAppContact from "./WhatsAppContact";
+import { T, Bg, useSite } from "../lib/site";
 
 export default function CampsSection() {
+  const { c } = useSite();
+  const paragraphs = c.camps.paragraphs;
   return (
-    <section
-      id="kempy"
-      className="relative py-20 overflow-hidden"
-      style={{
-        backgroundImage: "url('/images/stadium-bg.jpg')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
-    >
+    <Bg as="section" p="camps.background" id="kempy" className="relative py-20 overflow-hidden">
       {/* Teal gradient overlay */}
       <div
         className="absolute inset-0"
@@ -23,34 +19,30 @@ export default function CampsSection() {
         {/* Frosted glass card */}
         <div className="max-w-xl bg-white/85 backdrop-blur-sm rounded-3xl p-8 md:p-10 shadow-xl">
           <div className="inline-block bg-[#2CB5CA] text-white text-xs font-bold tracking-widest px-4 py-1.5 rounded-full mb-6 uppercase">
-            Sportovní všestranné kempy
+            <T p="camps.badge" />
           </div>
 
           <h2 className="text-3xl md:text-4xl font-black text-gray-900 leading-tight mb-5">
-            <span className="text-[#2CB5CA]">SPORTOVNÍ</span><br />
-            VŠESTRANNÉ KEMPY
+            <span className="text-[#2CB5CA]"><T p="camps.titleHighlight" /></span><br />
+            <T p="camps.titleLine2" />
           </h2>
 
-          <p className="text-gray-700 text-base mb-3">
-            Přihlaste své děti na naše celoroční kempy, které jsou zaměřené především na všestrannost.
-          </p>
-          <p className="text-gray-700 text-base mb-3">
-            Dítě si vyzkouší sporty, kterým by se mohlo v následujících letech věnovat.
-          </p>
-          <p className="text-gray-700 text-base mb-8">
-            Většina kempů od 7:30 do 16:30 po–pá.
-          </p>
+          {paragraphs.map((_, i) => (
+            <p key={i} className={`text-gray-700 text-base ${i === paragraphs.length - 1 ? "mb-8" : "mb-3"}`}>
+              <T p={`camps.paragraphs.${i}`} />
+            </p>
+          ))}
 
           <a
             href="https://docs.google.com/forms/d/e/1FAIpQLSdNjsnNkgQ9Lg8ZfIzyt3hUVhOgvjMz_mUXspty193yG5DyPg/viewform"
             className="inline-block bg-[#F07228] hover:bg-[#d96522] text-white font-bold px-8 py-4 rounded-full text-xs tracking-widest transition-colors shadow-md uppercase"
           >
-            Přihlásit se na aktuální kemp
+            <T p="camps.signupButton" />
           </a>
 
           <WhatsAppContact className="mt-6" />
         </div>
       </div>
-    </section>
+    </Bg>
   );
 }

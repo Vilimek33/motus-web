@@ -1,8 +1,12 @@
 "use client";
 import { useState } from "react";
+import { T, Img, useSite } from "../lib/site";
+
+const navHrefs = ["#kempy", "#krouzky", "#vyhody", "#faq", "#kontakt"];
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const { c } = useSite();
 
   return (
     <>
@@ -11,7 +15,7 @@ export default function Navbar() {
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
           <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
         </svg>
-        LETNÍ KEMP V SRPNU SE RYCHLE PLNÍ, PŘIHLAS SE I TY!
+        <T p="navbar.announcement" />
       </div>
 
       {/* Navbar */}
@@ -19,24 +23,18 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
           {/* Logo */}
           <a href="#">
-            <img src="/images/logo.png" alt="Motus Plzeň" className="h-10 w-auto" />
+            <Img p="navbar.logo" alt="Motus Plzeň" className="h-10 w-auto" />
           </a>
 
           {/* Desktop nav */}
           <div className="hidden md:flex items-center gap-8">
-            {[
-              { label: "KEMPY", href: "#kempy" },
-              { label: "KROUŽKY", href: "#krouzky" },
-              { label: "O NÁS", href: "#vyhody" },
-              { label: "ČASTÉ OTÁZKY", href: "#faq" },
-              { label: "KONTAKT", href: "#kontakt" },
-            ].map((item) => (
+            {c.navbar.links.map((_, i) => (
               <a
-                key={item.label}
-                href={item.href}
+                key={i}
+                href={navHrefs[i] ?? "#"}
                 className="text-gray-700 hover:text-gray-900 text-sm font-medium tracking-wider transition-colors"
               >
-                {item.label}
+                <T p={`navbar.links.${i}.label`} />
               </a>
             ))}
           </div>
@@ -78,20 +76,14 @@ export default function Navbar() {
 
         {menuOpen && (
           <div className="md:hidden border-t border-gray-100 bg-white px-6 py-4 flex flex-col gap-4">
-            {[
-              { label: "KEMPY", href: "#kempy" },
-              { label: "KROUŽKY", href: "#krouzky" },
-              { label: "O NÁS", href: "#vyhody" },
-              { label: "ČASTÉ OTÁZKY", href: "#faq" },
-              { label: "KONTAKT", href: "#kontakt" },
-            ].map((item) => (
+            {c.navbar.links.map((_, i) => (
               <a
-                key={item.label}
-                href={item.href}
+                key={i}
+                href={navHrefs[i] ?? "#"}
                 onClick={() => setMenuOpen(false)}
                 className="text-gray-700 hover:text-gray-900 text-sm font-medium tracking-wider"
               >
-                {item.label}
+                <T p={`navbar.links.${i}.label`} />
               </a>
             ))}
           </div>
