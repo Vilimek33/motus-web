@@ -62,6 +62,8 @@
     ],
     "contactText": "V případě zájmu nám pište nebo volejte na",
     "whatsappButton": "WhatsApp",
+    "whatsappButtonHref": "https://wa.me/420702026586",
+    "whatsappButtonColor": "#25D366",
     "pricePrefix": "Cena je",
     "price1": "1 500 Kč",
     "price1Suffix": "za pololetí (15 lekcí) nebo",
@@ -71,7 +73,9 @@
   },
   "whatsappContact": {
     "text": "Nebo nám pište a volejte na",
-    "button": "WhatsApp"
+    "button": "WhatsApp",
+    "buttonHref": "https://wa.me/420702026586",
+    "buttonColor": "#25D366"
   },
   "clubs": {
     "headingPrefix": "CO",
@@ -101,6 +105,8 @@
     "price": "700 Kč",
     "priceUnit": "/ měsíc",
     "signupButton": "Přihlásit se →",
+    "signupButtonHref": "https://docs.google.com/forms/d/e/1FAIpQLSdg1MVEeL4OKOXBp-8pySsVVRH0YkbU2JYnYYkBVZFtNgr-4A/viewform?usp=send_form",
+    "signupButtonColor": "#2CB5CA",
     "nextTraining": {
       "label": "Příští trénink",
       "title": "Všestrannost",
@@ -134,7 +140,9 @@
       "Dítě si vyzkouší sporty, kterým by se mohlo v následujících letech věnovat.",
       "Většina kempů od 7:30 do 16:30 po–pá."
     ],
-    "signupButton": "Přihlásit se na aktuální kemp"
+    "signupButton": "Přihlásit se na aktuální kemp",
+    "signupButtonHref": "https://docs.google.com/forms/d/e/1FAIpQLSdNjsnNkgQ9Lg8ZfIzyt3hUVhOgvjMz_mUXspty193yG5DyPg/viewform",
+    "signupButtonColor": "#F07228"
   },
   "advantages": {
     "eyebrow": "VÝHODY MOTUS PLZEŇ",
@@ -226,7 +234,9 @@
     "price": "4 444 Kč",
     "priceUnit": "/ týden",
     "priceNote": "Cena zahrnuje kompletní stravu, prostory, vybavení a kvalifikované trenéry.",
-    "button": "Přihlásit se na aktuální kemp v srpnu"
+    "button": "Přihlásit se na aktuální kemp v srpnu",
+    "buttonHref": "https://docs.google.com/forms/d/e/1FAIpQLSdNjsnNkgQ9Lg8ZfIzyt3hUVhOgvjMz_mUXspty193yG5DyPg/viewform",
+    "buttonColor": "#F07228"
   },
   "footer": {
     "brand": "MOTUS PLZEŇ Z.S.",

@@ -19,6 +19,8 @@ type Ctx = {
   edit: boolean;
   set: (path: string, value: string) => void;
   pickImage: (path: string) => void;
+  /** Otevře nastavení tlačítka (odkaz + barva). */
+  editButton: (path: string) => void;
   /** Lokální náhledy obrázků, které už jsou uložené na GitHubu, ale web je ještě nenasadil. */
   previews: Record<string, string>;
 };
@@ -28,6 +30,7 @@ const SiteCtx = createContext<Ctx>({
   edit: false,
   set: () => {},
   pickImage: () => {},
+  editButton: () => {},
   previews: {},
 });
 
@@ -172,3 +175,39 @@ export function Bg({
 
 /** Telefon "+420 702 026 586" → "+420702026586" */
 export const phoneDigits = (phone: string) => phone.replace(/[^\d+]/g, "");
+
+/**
+ * Tlačítko s editovatelným textem, odkazem a barvou.
+ * V obsahu: `<p>` = text, `<p>Href` = odkaz, `<p>Color` = barva.
+ */
+export function Btn({ p, className, newTab }: { p: string; className: string; newTab?: boolean }) {
+  const { c, edit, editButton } = useSite();
+  const href = String(getPath(c, `${p}Href`) ?? "#");
+  const color = String(getPath(c, `${p}Color`) ?? "");
+  return (
+    <a
+      href={href}
+      {...(newTab ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+      style={color ? { backgroundColor: color } : undefined}
+      className={`${className} hover:brightness-90 transition${edit ? " relative" : ""}`}
+    >
+      <T p={p} />
+      {edit && (
+        <span
+          data-admin-ui
+          role="button"
+          tabIndex={0}
+          title="Změnit odkaz a barvu tlačítka"
+          onClick={(e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            editButton(p);
+          }}
+          className="absolute -top-3 -right-3 z-30 flex items-center gap-1 bg-gray-900 text-white text-[10px] font-semibold tracking-normal normal-case px-2 py-1 rounded-full shadow-lg cursor-pointer hover:bg-black whitespace-nowrap"
+        >
+          🔗 Odkaz a barva
+        </span>
+      )}
+    </a>
+  );
+}

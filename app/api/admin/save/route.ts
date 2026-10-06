@@ -1,5 +1,6 @@
 import defaultContent from "@/content/site.json";
 import { isLoggedIn } from "../../../lib/auth";
+import { isHexColor, isSafeHref } from "../../../lib/validate";
 import { commitFiles, ConflictError, CONTENT_PATH, githubConfigured } from "../../../lib/github";
 
 export const maxDuration = 60;
@@ -37,7 +38,15 @@ export async function POST(request: Request) {
   let n = 0;
   let error = "";
 
-  const walk = (node: unknown): unknown => {
+  const walk = (node: unknown, key = ""): unknown => {
+    if (typeof node === "string" && key.endsWith("Href")) {
+      if (!isSafeHref(node)) error = `Neplatný odkaz: ${node}`;
+      return node.trim();
+    }
+    if (typeof node === "string" && key.endsWith("Color")) {
+      if (!isHexColor(node)) error = `Neplatná barva: ${node}`;
+      return node.trim();
+    }
     if (typeof node === "string") {
       const m = node.match(/^data:image\/(jpeg|png|webp);base64,([A-Za-z0-9+/=]+)$/);
       if (!m) {
@@ -51,9 +60,9 @@ export async function POST(request: Request) {
       uploaded[publicPath] = node;
       return publicPath;
     }
-    if (Array.isArray(node)) return node.map(walk);
+    if (Array.isArray(node)) return node.map((v) => walk(v));
     if (node && typeof node === "object") {
-      return Object.fromEntries(Object.entries(node).map(([k, v]) => [k, walk(v)]));
+      return Object.fromEntries(Object.entries(node).map(([k, v]) => [k, walk(v, k)]));
     }
     return node;
   };

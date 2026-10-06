@@ -4,6 +4,7 @@ import defaultContent from "@/content/site.json";
 import { isLoggedIn } from "../lib/auth";
 import { githubConfigured, readSiteContent } from "../lib/github";
 import type { SiteContent } from "../lib/site";
+import { withDefaults } from "../lib/content-utils";
 import AdminEditor from "./AdminEditor";
 
 export const metadata: Metadata = {
@@ -23,7 +24,7 @@ export default async function AdminPage() {
   } else {
     try {
       const latest = await readSiteContent();
-      content = latest.content as SiteContent;
+      content = withDefaults(defaultContent as SiteContent, latest.content);
       sha = latest.sha;
     } catch (e) {
       console.error(e);

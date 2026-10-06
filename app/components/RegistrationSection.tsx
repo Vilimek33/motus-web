@@ -1,5 +1,5 @@
 "use client";
-import { T } from "../lib/site";
+import { T, Btn } from "../lib/site";
 
 export default function RegistrationSection() {
   return (
@@ -32,14 +32,11 @@ export default function RegistrationSection() {
               <p className="text-gray-500 text-sm mb-7">
                 <T p="registration.priceNote" />
               </p>
-              <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLSdNjsnNkgQ9Lg8ZfIzyt3hUVhOgvjMz_mUXspty193yG5DyPg/viewform"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block w-full bg-[#F07228] hover:bg-[#d96522] text-white font-bold text-center py-4 rounded-xl text-xs tracking-widest transition-colors shadow-md uppercase"
-              >
-                <T p="registration.button" />
-              </a>
+              <Btn
+                p="registration.button"
+                newTab
+                className="block w-full text-white font-bold text-center py-4 rounded-xl text-xs tracking-widest shadow-md uppercase"
+              />
             </div>
           </div>
         </div>

@@ -1,6 +1,6 @@
 "use client";
 import WhatsAppContact from "./WhatsAppContact";
-import { T, Img, Bg, useSite } from "../lib/site";
+import { T, Img, Bg, Btn, useSite } from "../lib/site";
 
 const infoIcons = [
   (
@@ -78,12 +78,10 @@ export default function WhatWeDoSection() {
                   <T p="clubs.price" /> <span className="text-sm font-normal text-gray-500"><T p="clubs.priceUnit" /></span>
                 </div>
               </div>
-              <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLSdg1MVEeL4OKOXBp-8pySsVVRH0YkbU2JYnYYkBVZFtNgr-4A/viewform?usp=send_form"
-                className="bg-[#2CB5CA] hover:bg-[#25a3b7] text-white font-bold px-10 py-4 rounded-full text-base transition-colors shadow-md"
-              >
-                <T p="clubs.signupButton" />
-              </a>
+              <Btn
+                p="clubs.signupButton"
+                className="text-white font-bold px-10 py-4 rounded-full text-base shadow-md"
+              />
             </div>
 
             <WhatsAppContact className="mt-6" />

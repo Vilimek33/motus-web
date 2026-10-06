@@ -1,5 +1,5 @@
 "use client";
-import { T, useSite, phoneDigits } from "../lib/site";
+import { T, Btn, useSite, phoneDigits } from "../lib/site";
 
 export default function WhatsAppContact({ className = "" }: { className?: string }) {
   const { c } = useSite();
@@ -14,14 +14,11 @@ export default function WhatsAppContact({ className = "" }: { className?: string
           <T p="contact.whatsappPhone" />
         </a>
       </p>
-      <a
-        href={`https://wa.me/${phone.replace("+", "")}`}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold text-xs px-4 py-2.5 rounded-full transition-colors shadow-md whitespace-nowrap"
-      >
-        <T p="whatsappContact.button" />
-      </a>
+      <Btn
+        p="whatsappContact.button"
+        newTab
+        className="inline-flex items-center gap-2 text-white font-bold text-xs px-4 py-2.5 rounded-full shadow-md whitespace-nowrap"
+      />
     </div>
   );
 }

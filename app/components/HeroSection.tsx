@@ -1,5 +1,5 @@
 "use client";
-import { T, Img, Bg, useSite, phoneDigits } from "../lib/site";
+import { T, Img, Bg, Btn, useSite, phoneDigits } from "../lib/site";
 export default function HeroSection() {
   const { c } = useSite();
   const phone = phoneDigits(c.contact.whatsappPhone);
@@ -57,14 +57,11 @@ export default function HeroSection() {
                   <T p="contact.whatsappPhone" />
                 </a>
               </p>
-              <a
-                href={`https://wa.me/${phone.replace("+", "")}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold text-xs px-4 py-2.5 rounded-full transition-colors shadow-md whitespace-nowrap"
-              >
-                <T p="hero.whatsappButton" />
-              </a>
+              <Btn
+                p="hero.whatsappButton"
+                newTab
+                className="inline-flex items-center gap-2 text-white font-bold text-xs px-4 py-2.5 rounded-full shadow-md whitespace-nowrap"
+              />
             </div>
 
             <p className="text-gray-500 text-xs">

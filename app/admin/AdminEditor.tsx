@@ -4,6 +4,8 @@ import { useEffect, useMemo, useRef, useState, type MouseEvent } from "react";
 import { useRouter } from "next/navigation";
 import SitePage from "../components/SitePage";
 import { SiteProvider, getPath, setPath, type SiteContent } from "../lib/site";
+import { isHexColor, isSafeHref } from "../lib/validate";
+import ButtonDialog from "./ButtonDialog";
 
 type Status = { kind: "idle" | "saving" | "saved" | "error"; message?: string };
 
@@ -35,6 +37,22 @@ function collectPreviews(before: unknown, after: unknown, out: Record<string, st
   }
 }
 
+/** Najde první neplatný odkaz nebo barvu (aby se nedalo uložit něco rozbitého). */
+function findInvalid(node: unknown, key = ""): string {
+  if (typeof node === "string") {
+    if (key.endsWith("Href") && !isSafeHref(node)) return `neplatný odkaz „${node}“`;
+    if (key.endsWith("Color") && !isHexColor(node)) return `neplatná barva „${node}“`;
+    return "";
+  }
+  if (node && typeof node === "object") {
+    for (const [k, v] of Object.entries(node)) {
+      const found = findInvalid(v, k);
+      if (found) return found;
+    }
+  }
+  return "";
+}
+
 export default function AdminEditor({
   initialContent,
   initialSha,
@@ -51,11 +69,13 @@ export default function AdminEditor({
   const [previews, setPreviews] = useState<Record<string, string>>({});
   const [status, setStatus] = useState<Status>({ kind: "idle" });
   const [resetKey, setResetKey] = useState(0);
+  const [buttonPath, setButtonPath] = useState<string | null>(null);
   const fileInput = useRef<HTMLInputElement>(null);
   const imageTarget = useRef<string | null>(null);
 
   const dirty = useMemo(() => JSON.stringify(content) !== JSON.stringify(saved), [content, saved]);
-  const canSave = Boolean(sha) && dirty && status.kind !== "saving";
+  const invalidField = useMemo(() => findInvalid(content), [content]);
+  const canSave = Boolean(sha) && dirty && status.kind !== "saving" && !invalidField;
 
   // Varování při zavření stránky s neuloženými změnami
   useEffect(() => {
@@ -78,6 +98,7 @@ export default function AdminEditor({
         imageTarget.current = path;
         fileInput.current?.click();
       },
+      editButton: (path: string) => setButtonPath(path),
     }),
     [content, previews]
   );
@@ -163,6 +184,15 @@ export default function AdminEditor({
         </SiteProvider>
       </div>
 
+      {buttonPath && (
+        <ButtonDialog
+          path={buttonPath}
+          content={content}
+          onChange={(key, value) => ctx.set(key, value)}
+          onClose={() => setButtonPath(null)}
+        />
+      )}
+
       <input
         ref={fileInput}
         type="file"
@@ -178,11 +208,12 @@ export default function AdminEditor({
             <div className="text-sm font-bold">Administrace webu</div>
             <div
               className={`text-xs ${
-                status.kind === "error" ? "text-red-300" : status.kind === "saved" ? "text-green-300" : "text-white/60"
+                status.kind === "error" || invalidField ? "text-red-300" : status.kind === "saved" ? "text-green-300" : "text-white/60"
               }`}
               role="status"
             >
               {warning ||
+                (invalidField ? `Opravit: ${invalidField}` : "") ||
                 status.message ||
                 (status.kind === "saving"
                   ? "Ukládám…"

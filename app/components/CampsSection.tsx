@@ -1,6 +1,6 @@
 "use client";
 import WhatsAppContact from "./WhatsAppContact";
-import { T, Bg, useSite } from "../lib/site";
+import { T, Bg, Btn, useSite } from "../lib/site";
 
 export default function CampsSection() {
   const { c } = useSite();
@@ -33,12 +33,10 @@ export default function CampsSection() {
             </p>
           ))}
 
-          <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSdNjsnNkgQ9Lg8ZfIzyt3hUVhOgvjMz_mUXspty193yG5DyPg/viewform"
-            className="inline-block bg-[#F07228] hover:bg-[#d96522] text-white font-bold px-8 py-4 rounded-full text-xs tracking-widest transition-colors shadow-md uppercase"
-          >
-            <T p="camps.signupButton" />
-          </a>
+          <Btn
+            p="camps.signupButton"
+            className="inline-block text-white font-bold px-8 py-4 rounded-full text-xs tracking-widest shadow-md uppercase"
+          />
 
           <WhatsAppContact className="mt-6" />
         </div>
