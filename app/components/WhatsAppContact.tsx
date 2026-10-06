@@ -3,9 +3,9 @@ export default function WhatsAppContact({ className = "" }: { className?: string
     <div
       className={`flex flex-wrap items-center justify-between gap-3.5 bg-white border-[1.5px] border-[#2CB5CA]/35 rounded-2xl px-4 py-4 ${className}`}
     >
-      <p className="text-gray-800 text-sm font-semibold max-w-[320px]">
-        Nebo nám pište a volejte na{" "}
-        <a href="tel:+420702026586" className="text-[#25a3b7] font-extrabold">
+      <p className="text-gray-800 text-sm font-semibold">
+        Nebo nám pište a volejte na
+        <a href="tel:+420702026586" className="block text-[#25a3b7] font-extrabold whitespace-nowrap">
           +420 702 026 586
         </a>
       </p>
