@@ -1,3 +1,5 @@
+import WhatsAppContact from "./WhatsAppContact";
+
 export default function WhatWeDoSection() {
   return (
     <section id="krouzky">
@@ -97,6 +99,8 @@ export default function WhatWeDoSection() {
                 Přihlásit se →
               </a>
             </div>
+
+            <WhatsAppContact className="mt-6" />
           </div>
         </div>
       </div>

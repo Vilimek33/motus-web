@@ -1,3 +1,5 @@
+import WhatsAppContact from "./WhatsAppContact";
+
 export default function CampsSection() {
   return (
     <section
@@ -45,6 +47,8 @@ export default function CampsSection() {
           >
             Přihlásit se na aktuální kemp
           </a>
+
+          <WhatsAppContact className="mt-6" />
         </div>
       </div>
     </section>
