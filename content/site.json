@@ -3,14 +3,24 @@
     "whatsappPhone": "+420 702 026 586"
   },
   "navbar": {
-    "announcement": "LETNÍ KEMP V SRPNU SE RYCHLE PLNÍ, PŘIHLAS SE I TY!",
+    "announcement": "PŘIHLAS SVÉ DĚTI NA KROUŽKY JEŠTĚ DNES, KAPACITA JE OMEZENÁ!",
     "logo": "/images/logo.png",
     "links": [
-      { "label": "KEMPY" },
-      { "label": "KROUŽKY" },
-      { "label": "O NÁS" },
-      { "label": "ČASTÉ OTÁZKY" },
-      { "label": "KONTAKT" }
+      {
+        "label": "KEMPY"
+      },
+      {
+        "label": "KROUŽKY"
+      },
+      {
+        "label": "O NÁS"
+      },
+      {
+        "label": "ČASTÉ OTÁZKY"
+      },
+      {
+        "label": "KONTAKT"
+      }
     ]
   },
   "hero": {
@@ -21,10 +31,26 @@
     "titleHighlight": "zamilují!",
     "subtitle": "Rozvíjíme u dětí všestrannost, sebevědomí a zdravou lásku k pohybu, která je může provázet celý život.",
     "infoBadges": [
-      { "icon": "📍", "label": "MÍSTO", "value": "Hala ZŠ Chotěšov" },
-      { "icon": "🎒", "label": "PRO KOHO", "value": "2.–6. třída" },
-      { "icon": "🗓️", "label": "FREKVENCE", "value": "1× týdně" },
-      { "icon": "⚽", "label": "NÁPLŇ", "value": "Gymnastika, atletika, míčové hry" }
+      {
+        "icon": "📍",
+        "label": "MÍSTO",
+        "value": "Hala ZŠ Chotěšov"
+      },
+      {
+        "icon": "🎒",
+        "label": "PRO KOHO",
+        "value": "2.–6. třída"
+      },
+      {
+        "icon": "🗓️",
+        "label": "FREKVENCE",
+        "value": "1× týdně"
+      },
+      {
+        "icon": "⚽",
+        "label": "NÁPLŇ",
+        "value": "Gymnastika, atletika, míčové hry"
+      }
     ],
     "bullets": [
       "Zábavnou a hravou formou",
@@ -58,9 +84,18 @@
     "titleLine2": "KROUŽKY",
     "description": "Rozvíjejte pohybové dovednosti svých dětí v moderním zázemí pod vedením profesionálních trenérů.",
     "info": [
-      { "label": "KDY", "value": "Út a Čt" },
-      { "label": "ČAS", "value": "17:00 – 18:00" },
-      { "label": "MÍSTO", "value": "Plzeň" }
+      {
+        "label": "KDY",
+        "value": "Út a Čt"
+      },
+      {
+        "label": "ČAS",
+        "value": "17:00 – 18:00"
+      },
+      {
+        "label": "MÍSTO",
+        "value": "Plzeň"
+      }
     ],
     "priceLabel": "Měsíční členství",
     "price": "700 Kč",
@@ -74,7 +109,14 @@
     },
     "season": {
       "label": "Průběh sezóny",
-      "sports": ["Pohybové hry", "Atletika", "Gymnastika", "Netradiční sportovní hry", "Míčové hry", "Parkour"]
+      "sports": [
+        "Pohybové hry",
+        "Atletika",
+        "Gymnastika",
+        "Netradiční sportovní hry",
+        "Míčové hry",
+        "Parkour"
+      ]
     },
     "instructor": {
       "photo": "/images/trener-sebo.jpg",
@@ -98,10 +140,22 @@
     "eyebrow": "VÝHODY MOTUS PLZEŇ",
     "heading": "Proč si vybrat náš kemp?",
     "pillars": [
-      { "title": "Všestrannost", "desc": "Trénink zahrnující sporty od atletiky, až po netradiční sportovní hry." },
-      { "title": "Stravování a pitný režim", "desc": "Kvalitní vyvážená jídla a zajištěná hydratace po celý den pro maximální energii." },
-      { "title": "Výlety do přírody", "desc": "Pravidelné vycházky do přírody pro aktivní regeneraci a objevování okolí." },
-      { "title": "Sportovní psychologie", "desc": "Budování mentální odolnosti a týmového ducha skrze základy psychologie sportu." }
+      {
+        "title": "Všestrannost",
+        "desc": "Trénink zahrnující sporty od atletiky, až po netradiční sportovní hry."
+      },
+      {
+        "title": "Stravování a pitný režim",
+        "desc": "Kvalitní vyvážená jídla a zajištěná hydratace po celý den pro maximální energii."
+      },
+      {
+        "title": "Výlety do přírody",
+        "desc": "Pravidelné vycházky do přírody pro aktivní regeneraci a objevování okolí."
+      },
+      {
+        "title": "Sportovní psychologie",
+        "desc": "Budování mentální odolnosti a týmového ducha skrze základy psychologie sportu."
+      }
     ]
   },
   "trainers": {
@@ -110,9 +164,33 @@
     "headingHighlightLine2": "bránu.",
     "intro": "Kombinujeme pedagogické zkušenosti s profesionální sportovní minulostí.",
     "people": [
-      { "name": "Bc. Jan Šebo", "role": "Specialista na herní dovednosti", "sports": ["BĚH", "MÍČOVÉ HRY"], "image": "/images/trener-sebo.jpg" },
-      { "name": "Bc. Daniel Šobr", "role": "Specialista na herní dovednosti", "sports": ["FOTBAL", "MÍČOVÉ HRY"], "image": "/images/trener-sobr.jpg" },
-      { "name": "Bc. David Termer", "role": "Koordinátor pohybových kroužků", "sports": ["ATLETIKA", "GYMNASTIKA"], "image": "/images/trener-termer.jpg" }
+      {
+        "name": "Bc. Jan Šebo",
+        "role": "Specialista na herní dovednosti",
+        "sports": [
+          "BĚH",
+          "MÍČOVÉ HRY"
+        ],
+        "image": "/images/trener-sebo.jpg"
+      },
+      {
+        "name": "Bc. Daniel Šobr",
+        "role": "Specialista na herní dovednosti",
+        "sports": [
+          "FOTBAL",
+          "MÍČOVÉ HRY"
+        ],
+        "image": "/images/trener-sobr.jpg"
+      },
+      {
+        "name": "Bc. David Termer",
+        "role": "Koordinátor pohybových kroužků",
+        "sports": [
+          "ATLETIKA",
+          "GYMNASTIKA"
+        ],
+        "image": "/images/trener-termer.jpg"
+      }
     ]
   },
   "faq": {
@@ -155,15 +233,27 @@
     "description": "Budujeme zdravý vztah ke sportu u dětí už od útlého věku. Profesionálně, hravě a srdcem.",
     "menuHeading": "MENU",
     "menuLinks": [
-      { "label": "Kempy" },
-      { "label": "Kroužky" },
-      { "label": "O nás" },
-      { "label": "FAQ" }
+      {
+        "label": "Kempy"
+      },
+      {
+        "label": "Kroužky"
+      },
+      {
+        "label": "O nás"
+      },
+      {
+        "label": "FAQ"
+      }
     ],
     "otherHeading": "OSTATNÍ",
     "otherLinks": [
-      { "label": "Kontakt" },
-      { "label": "Obchodní podmínky" }
+      {
+        "label": "Kontakt"
+      },
+      {
+        "label": "Obchodní podmínky"
+      }
     ],
     "contactHeading": "KONTAKT",
     "email": "Motuscz@gmail.com",
