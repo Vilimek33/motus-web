@@ -108,20 +108,20 @@
     "signupButtonHref": "https://wa.me/420604420280",
     "signupButtonColor": "#2CB5CA",
     "nextTraining": {
-      "label": "Příští trénink",
-      "title": "Všestrannost",
-      "when": "Út a Čt, 17:00 v Plzni",
-      "occupancy": "Obsazenost kroužku: 5/20 dětí"
+      "label": "INDIVIDUÁLNÍ TRÉNINKOVÉ ČLENSTVÍ",
+      "title": "OSOBNÍ TRÉNINKY",
+      "when": "Čas a místo na domluvě",
+      "occupancy": "Kontakt: +420 605 988 121 / Cena členství: 2800 Kč/měsíc"
     },
     "season": {
-      "label": "Průběh sezóny",
+      "label": "MOŽNOSTI TRÉNINKU",
       "sports": [
         "Pohybové hry",
         "Atletika",
         "Gymnastika",
         "Netradiční sportovní hry",
         "Míčové hry",
-        "Parkour"
+        "Doučování TV"
       ]
     },
     "instructor": {
