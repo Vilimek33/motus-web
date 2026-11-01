@@ -1,6 +1,6 @@
 {
   "contact": {
-    "whatsappPhone": "+420 604 420 280"
+    "whatsappPhone": "+420 702 026 586"
   },
   "navbar": {
     "announcement": "PŘIHLAS SVÉ DĚTI NA KROUŽKY JEŠTĚ DNES, KAPACITA JE OMEZENÁ!",
@@ -49,7 +49,7 @@
       {
         "icon": "⚽",
         "label": "NÁPLŇ",
-        "value": "Gymnastika, atletika, míčové hry"
+        "value": "Kondiční a silová příprava"
       }
     ],
     "bullets": [
@@ -64,17 +64,17 @@
     "whatsappButton": "WhatsApp",
     "whatsappButtonHref": "https://wa.me/420702026586",
     "whatsappButtonColor": "#25D366",
-    "pricePrefix": "Cena je",
-    "price1": "1 500 Kč",
+    "pricePrefix": "Cena členství je",
+    "price1": "1 300 Kč",
     "price1Suffix": "za pololetí (15 lekcí) nebo",
-    "price2": "2 800 Kč",
+    "price2": "2 500 Kč",
     "price2Suffix": "za rok (30 lekcí).",
     "photo": "/images/hero-photo.jpg"
   },
   "whatsappContact": {
     "text": "Nebo nám pište a volejte na",
     "button": "WhatsApp",
-    "buttonHref": "https://wa.me/420702026586",
+    "buttonHref": "https://wa.me/420604420280",
     "buttonColor": "#25D366"
   },
   "clubs": {
@@ -105,7 +105,7 @@
     "price": "700 Kč",
     "priceUnit": "/ měsíc",
     "signupButton": "Přihlásit se →",
-    "signupButtonHref": "https://docs.google.com/forms/d/e/1FAIpQLSdg1MVEeL4OKOXBp-8pySsVVRH0YkbU2JYnYYkBVZFtNgr-4A/viewform?usp=send_form",
+    "signupButtonHref": "https://wa.me/420604420280",
     "signupButtonColor": "#2CB5CA",
     "nextTraining": {
       "label": "Příští trénink",
